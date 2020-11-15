@@ -1,0 +1,45 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* header */
+/* using palette : #7189BF #df7599 #ffc785 #72d6c9 */
+.navbar {
+  background-color: #0000FF;
+  border: initial;
+}
+
+.navbar-toggle {
+  border: 1px solid white;
+  .icon-bar {
+    background-color: white;
+  }
+}
+
+.header-tohome {
+  margin: 12px 0 0 8px;
+  font-size: 18px;
+}
+
+header a {
+  color: white;
+  &:hover {
+    background-color: white;
+    color: #0000FF;
+  }
+}
+
+.welcome-text {
+  color: white;
+}
+
+/* footer */
+.footer-navbar {
+  background-color: #0000FF; 
+}
+
+footer a {
+  color: white;
+  &:hover {
+    color: #72d6c9;
+  }
+}

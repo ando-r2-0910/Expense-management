@@ -1,9 +1,238 @@
+/* setting sidebar */
+.settings-sidebar {
+  padding: 10px 0px;
+
+  .list-group-item {
+    margin: 5px 16px;
+    color: white;
+    font-size: 18px;
+    border: 2px ridge white;
+    border-radius: 10px;
+    background-color: #0000FF;
+    &:hover {
+      background-color: #0000FF;
+      border: 2px ridge white;
+      color: white;
+    }
+  }
+
+  .active {
+    background-color: #0000FF;
+    border: 2px ridge white;
+  }
+}
+
+/* setting title */
+.settings-title {
+  margin: 40px 0 40px 0px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  background-color: #0000FF;
+  border: 2px ridge #ffffff;
+  border-radius: 10px;
+  padding: 4px 15px 4px 15px;
+  width: 350px;
+}
+
+/* default tag styles for users */
+.users {
+  padding: 60px 200px;
+  background-color: #bce0dc;
+
+  /* signup */
+  .signup-title {
+    margin: 40px 0 20px 200px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    background-color: #0000FF;
+    border: 2px ridge #ffffff;
+    border-radius: 10px;
+    padding: 4px 15px 4px 15px;
+    width: 280px;
+  }
+
+  .error-details {
+    color: #9c2510;
+  }
+
+  .signup-form {
+    color: #2b736a;
+
+    .form-control {
+      margin-bottom: 10px;
+    }
+
+    .signup-button {
+      margin-top: 20px;
+      font-size: 20px;
+      float: right;
+      padding: 5px 20px 5px 20px;
+      background-color: #0000FF;
+      border-color: #7aeede;
+      color: white;
+      &:hover {
+        background-color: #0000FF;
+        border-color: #7aeede;
+        color: white;
+      }
+    }
+  }
+
+  /* profile page header */
+  .profile-header {
+    background-color: #333333;
+    margin-top: -10px;
+  }
+
+  .header-image {
+    opacity: 0.3;
+  }
+
+  /* profile page sidebar */
+  .profile-sidebar {
+    background-color: #df7599;
+    color: white;
+
+    .profile-icon {
+      margin-top: 16px;
+      padding: 20px;
+
+      .icon-image {
+        border: 4px ridge #ffc785;
+        border-radius: 10px;
+      }
+    }
+
+    .profile-name {
+      font-size: 28px;
+    }
+
+    .profile-created_at {
+      font-size: 18px;
+    }
+  }
+
+  /* profile page information */
+  .profile-information {
+    background-color: #ffc785;
+    color: white;
+  }
+
+  /* settings */
+  .settings-form {
+    color: #2b736a;
+
+    .form-control {
+      margin-bottom: 10px;
+    }
+
+    .settings-update-button {
+      margin-top: 20px;
+      font-size: 20px;
+      float: right;
+      padding: 5px 20px 5px 20px;
+      background-color: #0000FF;
+      border-color: #0000FF;
+      color: white;
+      &:hover {
+        background-color: #0000FF;
+        border-color: #0000FF;
+        color: white;
+      }
+    }
+  }
+}
+
+/* Users::Image */
+.images {
+  .image-settings-form {
+    color: #2b736a;
+
+    .form-control {
+      margin-bottom: 10px;
+    }
+
+    .image-settings-update-button {
+      margin-top: 20px;
+      font-size: 20px;
+      float: right;
+      padding: 5px 20px 5px 20px;
+      background-color: #72d6c9;
+      border-color: #7aeede;
+      color: white;
+      &:hover {
+        background-color: #7aeede;
+        border-color: #7aeede;
+        color: white;
+      }
+    }
+  }
+
+  .image-reset-button {
+    margin: 20px 10px 20px 0;
+    font-size: 20px;
+    float: right;
+    padding: 5px 20px 5px 20px;
+    background-color: #72d6c9;
+    border-color: #7aeede;
+    color: white;
+    &:hover {
+      background-color: #7aeede;
+      border-color: #7aeede;
+      color: white;
+    }
+  }
+}
+
+/**/
+.self_categories {
+  /* category-setting */
+  .category-setting-title {
+    margin: 40px 0 40px 0px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    background-color: #0000FF;
+    border: 2px ridge #ffffff;
+    border-radius: 10px;
+    padding: 4px 15px 4px 15px;
+    width: 350px;
+  }
+
+  .category-setting-form {
+    color: #2b736a;
+
+    .form-control {
+      margin-bottom: 10px;
+    }
+
+    .category-setting-button {
+      margin-top: 20px;
+      font-size: 20px;
+      float: right;
+      padding: 5px 20px 5px 20px;
+      background-color: #0000FF;
+      border-color: #7aeede;
+      color: white;
+      &:hover {
+        background-color: #0000FF;
+        border-color: #7aeede;
+        color: white;
+      }
+    }
+  }
+}
+
 /* ユーザー情報テーブル */
 
 .user-table {
   vertical-align: middle;
   text-align: center;
 }
+
+/* 入力フォーム */
 
 .label-signup {
   margin-top: 5px;
@@ -12,3 +241,75 @@
 .btn-signup {
   margin-top: 10px;
 }
+
+.label-user--edit {
+  margin-top: 5px;
+}
+
+.btn-user--edit {
+  margin-top: 10px;
+}
+
+/* ユーザー一覧ページ */
+
+#table-users {
+  td {
+    vertical-align: middle;
+  }  
+}
+
+/* 基本情報編集モーダルウインドウ */
+
+.label-basic-info {
+  margin-top: 5px;
+}
+
+.btn-basic-info {
+  margin: 15px 0;
+  width: 30%;
+}
+
+  /* profile page information */
+    .profile-information {
+      height: 900px;
+      margin: 0px -15px 0 15px;
+
+    .monthly-balances-title {
+      font-size: 18px;
+    }
+
+      .user-statistics {
+        .aggregation-period {
+          font-size: 14px;
+          width: 100%;
+        }
+  
+        .monthly-expenditure {
+          font-size: 16px;
+          width: 100%;
+          margin: initial;
+        }
+  
+        .monthly-income {
+          font-size: 16px;
+          width: 100%;
+          margin: initial;
+        }
+  
+        .chart-title {
+          font-size: 14px;
+          width: 100%;
+        }
+      }
+  
+      /* carousel-control override */
+      .carousel-control {
+        height: 900px;
+        width: 5%;
+      }
+
+      .carousel-indicators {
+        position: relative;
+        top: 850px;
+      }
+    }

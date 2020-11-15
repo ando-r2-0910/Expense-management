@@ -1,24 +1,28 @@
-<% provide(:title, 'Sign up') %>
-<h1>ユーザー登録</h1>
-
+<% provide(:title, '新規社員登録') %>
+<div class="signup-title">
+  新規会員登録
+</div>
 <div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_with(model: @user, local: true) do |f| %>
-      <%= render 'shared/error_messages' %>
+  <div class="col-md-6 col-md-offset-3 signup-form">
+    <%= form_for(@user, url: signup_path) do |f| %>
+      <%= render("shared/error_messages") %>
 
-      <%= f.label :name, class: "label-signup" %>
+      <%= f.label :name, "社員名(必須項目)"%>
       <%= f.text_field :name, class: "form-control" %>
 
-      <%= f.label :email, class: "label-signup" %>
+      <%= f.label :email, "メールアドレス(必須項目)" %>
       <%= f.email_field :email, class: "form-control" %>
 
-      <%= f.label :password, class: "label-signup" %>
+      <%= f.label :department, class: "所属" %>
+      <%= f.text_field :department, class: "form-control" %>
+
+　　　<%= f.label :password, "パスワード(必須項目)" %>
       <%= f.password_field :password, class: "form-control" %>
 
-      <%= f.label :password_confirmation, "Confirmation", class: "label-signup" %>
+      <%= f.label :password_confirmation, "パスワードの確認(必須項目)" %>
       <%= f.password_field :password_confirmation, class: "form-control" %>
 
-      <%= f.submit "新規作成", class: "btn btn-primary btn-block btn-signup" %>
+      <%= f.submit "社員登録", class: "btn signup-button" %>
     <% end %>
   </div>
 </div>

@@ -1,18 +1,23 @@
 <% provide(:title, @user.name) %>
-<div>
-  <table class="table table-bordered table-condensed user-table">
-    <tr>
-      <td>時間管理表</td>
-      <td>指定勤務時間</td>
-      <td>基本時間</td>
-      <td>月初日</td>
-    </tr>
-
-    <tr>
-      <td>所属</td>
-      <td>名前：<%= @user.name %></td>
-      <td>出勤日数</td>
-      <td>月末日</td>
+<h1><%= @user.name %></h1>
+</div>
+<div class="col-md-10 col-md-offset-1 user-show-table">
+  <table class="table table-condensed table-bordered table-hover" id="table-users">
+    
+    <% if current_user.admin? %>
+      <tr>
+        <th>メールアドレス</th>
+        <td><%= @user.email %></td>
+      </tr>
+    <% end %>
+  　<tr>
+      <th>所属</th>
+      <td><%= @user.department %></td>
     </tr>
   </table>
+</div>
+<div class="profile_infomation">
+　<div class="col-md-11 col-sm-12 profile-information">
+    <%= render("shared/carousel", user: @user) %>
+  <div>
 </div>
